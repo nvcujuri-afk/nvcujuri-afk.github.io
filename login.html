@@ -47,7 +47,9 @@
 
         /* Header */
         .login-header {
-            background: linear-gradient(115deg, #03193d 0%, #052c80 50%);
+            background: linear-gradient(135deg, rgba(0, 0, 70, 0.82), rgba(28, 181, 224, 0.78), rgba(0, 51, 102, 0.82));
+            background-size: 400% 400%;
+            animation: headerGradientMove 15s ease infinite;
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             padding: 12px 24px;
@@ -57,6 +59,12 @@
             flex-wrap: wrap;
             gap: 12px;
             z-index: 10;
+        }
+
+        @keyframes headerGradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         .header-left {
@@ -154,7 +162,7 @@
             flex: 1;
             min-width: 280px;
             max-width: 520px;
-            text-align: center;
+            text-align: left;
         }
 
         .hero-left .welcome-icon {
@@ -191,7 +199,7 @@
             height: 3px;
             background: linear-gradient(90deg, #f0c040, #ff6b6b);
             border-radius: 2px;
-            margin: 16px auto 0;
+            margin: 16px 0 0;
         }
 
         /* Login Box */
@@ -199,7 +207,7 @@
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(16px);
             border-radius: 12px;
-            padding: 22px 20px 16px;
+            padding: 22px 20px 32px;
             width: 247px;
             max-width: 100%;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3), 0 0 40px rgba(28, 181, 224, 0.15);
@@ -539,6 +547,7 @@
             transition: all 0.3s ease;
             font-family: 'Kalimati', 'Mukta', sans-serif;
             margin-top: 4px;
+            margin-bottom: 8px;
         }
 
         .btn-signup:hover {
@@ -715,8 +724,7 @@
                 <span>अनुगमन तथा सर्वेक्षण ड्यासबोर्डमा स्वागत छ।</span>
             </h2>
             <p class="sub-text">
-                सेवाग्राही सर्वेक्षण, कार्यालय अनुगमन, समय/पोशाक अनुगमन 
-                र आयोजना अनुगमन
+                सार्वजनिक संस्थाको सेवाप्रवाह, नियमितता र आयोजनाको अनुगमन एवम् सेवाग्राही सर्वेक्षण
             </p>
             <div class="decorative-line"></div>
         </div>

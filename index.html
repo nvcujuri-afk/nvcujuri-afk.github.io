@@ -356,7 +356,7 @@
 
                 <!-- Center: Branding + Offline Badge -->
                 <div class="flex-1 text-center px-1 sm:px-2">
-                    <h5 class="font-bold text-[9px] sm:text-[12px] text-white tracking-wide leading-none" style="font-weight: 500;">नेपl सरकार</h5>
+                    <h5 class="font-bold text-[9px] sm:text-[12px] text-white tracking-wide leading-none" style="font-weight: 500;">नेपाल सरकार</h5>
                     <h1 class="font-bold text-[12px] sm:text-[18px] leading-tight text-white" style="font-weight: 500;">राष्ट्रिय सतर्कता केन्द्र</h1>
                     <p class="text-[8px] sm:text-[11px] text-white/90 font-medium hidden sm:block" style="font-weight: 500;">कार्यालय अनुगमन र सेवाग्राही सर्वेक्षण</p>
                     <span id="offlineBadge"
@@ -1913,8 +1913,32 @@
                             <!-- GIS Mapping Section -->
                             <div id="mapSection"
                                 style="display: none; margin-bottom: 20px; padding: 15px; background: white; border-radius: 12px; border: 1px solid #e8eef5; box-shadow: 0 4px 12px rgba(0,0,0,0.04);">
-                                <h4 style="font-family:'Kalimati', sans-serif; color: #306a95; margin-bottom: 10px;">
-                                    भौगोलिक अवस्थिति (GIS Map)</h4>
+                                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 10px;">
+                                    <div style="display: flex; align-items: center; gap: 10px;">
+                                        <h4 style="font-family:'Kalimati', sans-serif; color: #306a95; margin: 0;">
+                                            भौगोलिक अवस्थिति (GIS Map)</h4>
+                                        <div style="display: flex; gap: 5px;">
+                                            <button id="districtViewBtn" onclick="switchMapView('district')" 
+                                                    style="padding: 6px 12px; background: #306a95; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: 'Kalimati', sans-serif; font-size: 12px;">
+                                                जिल्ला
+                                            </button>
+                                            <button id="localLevelViewBtn" onclick="switchMapView('local')" 
+                                                    style="padding: 6px 12px; background: #e5e7eb; color: #374151; border: none; border-radius: 6px; cursor: pointer; font-family: 'Kalimati', sans-serif; font-size: 12px;">
+                                                स्थानीय तह
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                        <input type="text" id="mapSearchInput" placeholder="जिल्ला/स्थानीय तह खोज्नुहोस्..." 
+                                               style="padding: 6px 12px; border: 1px solid #d1d5db; border-radius: 6px; font-family: 'Kalimati', sans-serif; font-size: 13px; min-width: 150px;">
+                                        <button onclick="printMap()" style="padding: 6px 12px; background: #306a95; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: 'Kalimati', sans-serif; font-size: 13px;">
+                                            <i class="fas fa-print"></i> प्रिन्ट
+                                        </button>
+                                        <button onclick="exportMapData()" style="padding: 6px 12px; background: #27ae60; color: white; border: none; border-radius: 6px; cursor: pointer; font-family: 'Kalimati', sans-serif; font-size: 13px;">
+                                            <i class="fas fa-download"></i> निर्यात
+                                        </button>
+                                    </div>
+                                </div>
                                 <div id="nepalMap" style="height: 400px; border-radius: 8px;"></div>
                             </div>
 
