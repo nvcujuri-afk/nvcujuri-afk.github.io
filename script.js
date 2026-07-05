@@ -2141,7 +2141,7 @@ async function loadData() {
         if (loadingOverlay && loadingOverlay.style.display === "flex" && loadingText) {
             loadingText.innerHTML = `
                 नेटवर्क ढिलो भएकोले डाटा लोड हुन समय लागिरहेको छ।<br>
-                <button onclick="location.reload()" style="margin-top:15px; padding:10px 20px; background:#387ae6; color:white; border:none; border-radius:10px; cursor:pointer; font-family:'Kalimati'; box-shadow: 0 4px 10px rgba(56, 122, 230, 0.3);">🔄 पुनः लोड गर्नुहोस्</button>
+                <button onclick="location.reload()" style="margin-top:15px; padding:5px 10px; background:#387ae6; color:white; border:none; border-radius:10px; cursor:pointer; font-family:'Kalimati'; box-shadow: 0 4px 10px rgba(56, 122, 230, 0.3);">🔄 पुनः लोड गर्नुहोस्</button>
             `;
         }
     }, 10000);

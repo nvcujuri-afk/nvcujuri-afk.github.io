@@ -1030,6 +1030,7 @@ table {
 
 #clockEnglishDate {
     min-width: 80px;
+    font-weight: 500;
     white-space: nowrap;
 }
 
@@ -1064,11 +1065,11 @@ td {
 
 th {
     background: linear-gradient(135deg, #a6aec6ce 0%, #a0b5d5b3 90% );
-    color: rgb(15, 15, 47);
+    color: rgb(8, 8, 86);
     font-weight: 600;
     position: sticky;
     top: 0;
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     padding: 6px 8px;
 }
 
@@ -1999,7 +2000,7 @@ tbody tr:nth-child(even):hover {
     font-family: 'Kalimati', sans-serif;
     color: #2b72a9;
     margin-bottom: 8px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     border-bottom: 2px solid #e2e8f0;
     padding-bottom: 5px;
     display: flex;
@@ -3420,7 +3421,7 @@ tbody tr:nth-child(even):hover {
 
 /* ===== MODERN ALERTS SECTION ===== */
 #monitoringAlertsSection h4 {
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
 }
 
 /* ===== MODERN WORD COUNTER ===== */
@@ -3546,7 +3547,8 @@ tbody tr:nth-child(even):hover {
 }
 
 #clockNepaliDate {
-    font-size: 11px !important;
+    font-size: 10px !important;
+    font-weight: 500 !important;
     letter-spacing: 0.3px;
 }
 
